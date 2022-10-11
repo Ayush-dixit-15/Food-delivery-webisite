@@ -42,7 +42,7 @@
   width: 100%;
   position: absolute;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 #navbar ul li {
@@ -53,14 +53,15 @@
 
 #navbar ul a {
   display: block;
-  padding: 3px 22px;
+  padding: 5px 22px;
   border-radius: 20px;
   text-decoration: none;
   color: white;
+  font-weight: 500;
 }
 
 #navbar ul li a:hover {
-  color: black;
+  color: rgb(187, 81, 81);
   backdrop-filter: white;
 }
 
@@ -73,11 +74,13 @@
   align-items: center;
   height: 100vh;
 }
+
 #home h1 {
   color: black;
   font-weight: 800;
   font-size: 4.25rem;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -94,7 +97,7 @@ html {
   opacity: 1;
 }
 
-#home::after{
+#home::after {
   content: "";
   position: absolute;
   top: 0;
@@ -164,22 +167,27 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 #clients img {
   height: 124px;
 }
+
 .client-item {
   padding: 34px;
 }
+
 #client-section {
   position: relative;
   /* height: 344px; */
 }
+
 /* Contact Form */
 #contact {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contact {
   max-width: 500px;
   margin: 30px 10px;
@@ -423,24 +431,24 @@ footer {
   text-align: center;
 }
 
-.hero-butn{
-  background-color: rgb(187, 81, 81); 
+.hero-butn {
+  background-color: rgb(187, 81, 81);
   border: 2px solid black;
   font-size: 1rem;
   padding: 1% 2.5%;
   font-weight: 500;
   transition: all 0.35s;
- }
+}
 
- .hero-butn:hover{
+.hero-butn:hover {
   background-color: #000;
   color: rgb(187, 81, 81);
   border: 1px solid rgb(187, 81, 81);
   transform: scale(1.1);
- }
- 
- /* Testimonial Section  */
- .testimonials {
+}
+
+/* Testimonial Section  */
+.testimonials {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -450,7 +458,7 @@ footer {
   text-align: center;
 }
 
-.testimonials h2{
+.testimonials h2 {
   font-size: 2rem;
   font-family: sans-serif;
   font-weight: 400;
