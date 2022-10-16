@@ -187,7 +187,6 @@
 .contact {
   max-width: 500px;
   margin: 30px 10px;
-  position: relative;
   background: #3e3e3e;
   border-radius: 15px;
 }
@@ -253,11 +252,12 @@
 
 .contact-body {
   display: flex;
+  flex-direction: column;
 }
 
 .contact-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 24px;
 }
 
 .contact-body-item.left {
@@ -285,7 +285,7 @@
 }
 
 .app-contact {
-  margin-top: auto;
+  margin-top: 24px;
   font-size: 8px;
   color: #888;
 }
@@ -362,35 +362,17 @@
   margin: 0 5px;
 }
 
-@media contact and (max-width: 520px) {
+@media (min-width: 562px) {
   .contact-body {
-    flex-direction: column;
-  }
-
-  .contact-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
     flex-direction: row;
   }
 
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media contact and (max-width: 600px) {
-  .contact-body {
-    padding: 40px;
-  }
-
   .contact-body-item {
-    padding: 0;
+    padding: 50px;
+  }
+
+  .app-contact {
+    margin-top: auto;
   }
 }
 
@@ -464,6 +446,7 @@
   padding: 30px 0;
 }
 
+
 footer {
   background: black;
   color: white;
@@ -471,7 +454,7 @@ footer {
   letter-spacing: 2px;
   text-align: center;
   padding: 20px;
-  
+
 }
 
 .footer-ul{
